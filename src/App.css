@@ -1,0 +1,17 @@
+
+/* Genel uygulama tasarımı */
+.app-container {
+  font-family: Arial, sans-serif;
+  width: 80%; /* Genişliği %80 yapıyoruz */
+  margin: 0 auto; /* Merkezi konumlandırma */
+  padding: 20px;
+  background-color: #f1f3f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 30px;
+}

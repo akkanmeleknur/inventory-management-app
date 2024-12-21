@@ -1,0 +1,108 @@
+/* Item List Container */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* Her bir item için stil */
+.item {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;  /* Butonlar ve içerik arasındaki boşluğu eşitler */
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ürün ismi ve miktarının stilini ayarlıyoruz */
+.item-info {
+  font-size: 18px;
+  font-weight: bold;
+  display: grid;  /* Grid düzeni kullanarak hizalama */
+  grid-template-columns: 1fr 1fr 1fr;  /* Üç sütun oluşturuyoruz */
+  grid-gap: 30px;
+  align-items: center;  /* Yükseklik hizalaması */
+}
+
+/* Ürün adı ve kalite durumu renkleri */
+.item-name {
+  color: #051e39;
+}
+
+.item-quantity {
+  color: #495057;}
+
+.item-stock {
+  color: #6c757d;
+}
+
+/* Butonlar için stil */
+.item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Genel buton stilleri */
+.btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;  /* Butonların geçiş animasyonu */
+}
+
+.btn:hover {
+  opacity: 0.8;  /* Hover durumunda butonun opaklığı azalır */
+}
+
+/* Silme butonu */
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  width: 60px;
+}
+
+/* Artırma butonu */
+.btn-increase {
+  background-color: #f6762d;
+  color: white;
+  width: 130px;
+}
+
+/* Azaltma butonu */
+.btn-decrease {
+  background-color: #ffc107;
+  color: white;
+  width: 120px;
+}
+
+/* Stok artırma butonu */
+.btn-stock-increase {
+  background-color: #a7287d; /* Yeşil renk */
+  color: white;
+  width: 50px;
+  
+  
+}
+
+/* Stok azaltma butonu */
+.btn-stock-decrease {
+  background-color: #5635dc; /* Kırmızı renk */
+  color: white;
+  width: 50px;
+  margin-right: 95px;
+}
+
+/* Hover durumu */
+.btn-stock-increase:hover {
+  opacity: 75%;
+}
+
+.btn-stock-decrease:hover {
+  opacity: 75%;
+}
